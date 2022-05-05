@@ -24,11 +24,6 @@ class MainViewModelTests: XCTestCase {
         XCTAssertNotNil(viewModel.tapeOfImages)
     }
     
-    func testFetchImages() async {
-        try? await viewModel.fetchImages()
-        XCTAssertNotNil(viewModel.tapeOfImages)
-    }
-    
     func testUpdatingImagesUpdateCurrentPage() {
         viewModel.currentPage = 0
         viewModel.updateImages()

@@ -15,16 +15,15 @@ struct MainView: View {
             Group {
                 if !viewModel.tapeOfImages.isEmpty, let images = viewModel.tapeOfImages {
                     ScrollView {
-                        ForEach(images) { element in
-                            NetworkImageView(networkImage: element)
-                                .shadow(color: .black.opacity(0.5), radius: 4, x: 3, y: 3)
-                                .shadow(color: .white.opacity(0.5), radius: 4, x: -3, y: -3)
+                        ForEach(images) { networkImage in
+                            NetworkImageView(networkImage: networkImage)
+                                .dropShadow()
                                 .onTapGesture {
-                                    viewModel.selectedFieldId = element.id
+                                    viewModel.selectedFieldId = networkImage.id
                                     viewModel.showPhotoPicker()
                                 }
                                 .onAppear() {
-                                    if images.last?.id == element.id {
+                                    if images.last?.id == networkImage.id {
                                         viewModel.startPagination = true
                                     }
                                 }

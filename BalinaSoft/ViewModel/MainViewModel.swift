@@ -26,13 +26,7 @@ class MainViewModel: ViewModel, ObservableObject {
     let networkManager = NetworkManager.networkManager
     
     init() {
-        Task {
-            do {
-                try await fetchImages()
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
+        getRequest()
     }
     
     func showPhotoPicker() {
@@ -49,25 +43,22 @@ class MainViewModel: ViewModel, ObservableObject {
     
     func updateImages() {
         currentPage += 1
-        Task {
-            do {
-                try await fetchImages()
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
+        getRequest()
     }
     
-    func fetchImages() async throws {
-        guard let url = URL(string: "https://junior.balinasoft.com/api/v2/photo/type?page=\(currentPage)") else { return }
-        let response = try await URLSession.shared.data(from: url)
-        let networkResponse = try JSONDecoder().decode(NetworkResponse.self, from: response.0)
-        await MainActor.run(body: {
-            tapeOfImages.append(contentsOf: networkResponse.tapeOfImages)
-            
-            endPagination = networkResponse.page >= networkResponse.totalPages
-            startPagination = false
-        })
+    func getRequest() {
+        networkManager.getRequest(
+            for: currentPage,
+            completion: { response in
+                switch response {
+                case .success(let good):
+                    self.tapeOfImages.append(contentsOf: good.tapeOfImages)
+                    self.endPagination = good.page >= good.totalPages
+                    self.startPagination = false
+                case .failure(_):
+                    print("Страница не обновилась")
+                }
+            })
     }
     
     func postRequest() {
