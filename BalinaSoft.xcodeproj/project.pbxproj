@@ -14,6 +14,19 @@
 		B885BACE28244EF0006618A0 /* BalinaSoftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BACD28244EF0006618A0 /* BalinaSoftTests.swift */; };
 		B885BAD828244EF0006618A0 /* BalinaSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAD728244EF0006618A0 /* BalinaSoftUITests.swift */; };
 		B885BADA28244EF0006618A0 /* BalinaSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAD928244EF0006618A0 /* BalinaSoftUITestsLaunchTests.swift */; };
+		B885BAEF28244FFE006618A0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B885BAEE28244FFE006618A0 /* SDWebImage */; };
+		B885BAF228245009006618A0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B885BAF128245009006618A0 /* SDWebImageSwiftUI */; };
+		B885BAF528245015006618A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B885BAF428245015006618A0 /* Alamofire */; };
+		B885BAF72824508B006618A0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAF62824508B006618A0 /* MainView.swift */; };
+		B885BAF9282450AE006618A0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAF8282450AE006618A0 /* MainViewModel.swift */; };
+		B885BAFC282450CD006618A0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAFB282450CD006618A0 /* ViewModel.swift */; };
+		B885BAFE282450DC006618A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAFD282450DC006618A0 /* NetworkManager.swift */; };
+		B885BB00282450E9006618A0 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BAFF282450E9006618A0 /* NetworkResponse.swift */; };
+		B885BB0228245109006618A0 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BB0128245109006618A0 /* NetworkImageView.swift */; };
+		B885BB06282451B1006618A0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BB05282451B1006618A0 /* ImagePicker.swift */; };
+		B885BB08282451E7006618A0 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BB07282451E7006618A0 /* MainViewModelTests.swift */; };
+		B885BB0A28245222006618A0 /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BB0928245222006618A0 /* MainViewTests.swift */; };
+		B885BB0E282452D9006618A0 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885BB0D282452D9006618A0 /* Picker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,16 @@
 		B885BAD328244EF0006618A0 /* BalinaSoftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalinaSoftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B885BAD728244EF0006618A0 /* BalinaSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalinaSoftUITests.swift; sourceTree = "<group>"; };
 		B885BAD928244EF0006618A0 /* BalinaSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalinaSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B885BAF62824508B006618A0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B885BAF8282450AE006618A0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B885BAFB282450CD006618A0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B885BAFD282450DC006618A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B885BAFF282450E9006618A0 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		B885BB0128245109006618A0 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		B885BB05282451B1006618A0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B885BB07282451E7006618A0 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		B885BB0928245222006618A0 /* MainViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTests.swift; sourceTree = "<group>"; };
+		B885BB0D282452D9006618A0 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B885BAF528245015006618A0 /* Alamofire in Frameworks */,
+				B885BAF228245009006618A0 /* SDWebImageSwiftUI in Frameworks */,
+				B885BAEF28244FFE006618A0 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				B885BABC28244EEF006618A0 /* BalinaSoftApp.swift */,
-				B885BABE28244EEF006618A0 /* ContentView.swift */,
+				B885BAE728244F51006618A0 /* NetworkManager */,
+				B885BAE628244F48006618A0 /* Navigation */,
+				B885BAE828244F80006618A0 /* View */,
+				B885BAE928244F87006618A0 /* ViewModel */,
+				B885BAEB28244FC7006618A0 /* Models */,
+				B885BAEC28244FCE006618A0 /* Components */,
+				B885BAFA282450B9006618A0 /* Protocols */,
 				B885BAC028244EF0006618A0 /* Assets.xcassets */,
 				B885BAC228244EF0006618A0 /* Preview Content */,
 			);
@@ -114,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				B885BACD28244EF0006618A0 /* BalinaSoftTests.swift */,
+				B885BB0B28245254006618A0 /* View */,
+				B885BB0C2824525F006618A0 /* ViewModel */,
 			);
 			path = BalinaSoftTests;
 			sourceTree = "<group>";
@@ -125,6 +159,80 @@
 				B885BAD928244EF0006618A0 /* BalinaSoftUITestsLaunchTests.swift */,
 			);
 			path = BalinaSoftUITests;
+			sourceTree = "<group>";
+		};
+		B885BAE628244F48006618A0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B885BABE28244EEF006618A0 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B885BAE728244F51006618A0 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B885BAFD282450DC006618A0 /* NetworkManager.swift */,
+				B885BAFF282450E9006618A0 /* NetworkResponse.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B885BAE828244F80006618A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B885BAF62824508B006618A0 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B885BAE928244F87006618A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B885BAF8282450AE006618A0 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B885BAEB28244FC7006618A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B885BB0D282452D9006618A0 /* Picker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B885BAEC28244FCE006618A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B885BB0128245109006618A0 /* NetworkImageView.swift */,
+				B885BB05282451B1006618A0 /* ImagePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B885BAFA282450B9006618A0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B885BAFB282450CD006618A0 /* ViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B885BB0B28245254006618A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B885BB0928245222006618A0 /* MainViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B885BB0C2824525F006618A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B885BB07282451E7006618A0 /* MainViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +251,11 @@
 			dependencies = (
 			);
 			name = BalinaSoft;
+			packageProductDependencies = (
+				B885BAEE28244FFE006618A0 /* SDWebImage */,
+				B885BAF128245009006618A0 /* SDWebImageSwiftUI */,
+				B885BAF428245015006618A0 /* Alamofire */,
+			);
 			productName = BalinaSoft;
 			productReference = B885BAB928244EEF006618A0 /* BalinaSoft.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +328,11 @@
 				Base,
 			);
 			mainGroup = B885BAB028244EEF006618A0;
+			packageReferences = (
+				B885BAED28244FFE006618A0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				B885BAF028245009006618A0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				B885BAF328245015006618A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B885BABA28244EEF006618A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +375,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B885BAFE282450DC006618A0 /* NetworkManager.swift in Sources */,
+				B885BB0228245109006618A0 /* NetworkImageView.swift in Sources */,
+				B885BAFC282450CD006618A0 /* ViewModel.swift in Sources */,
+				B885BB0E282452D9006618A0 /* Picker.swift in Sources */,
+				B885BB06282451B1006618A0 /* ImagePicker.swift in Sources */,
+				B885BB00282450E9006618A0 /* NetworkResponse.swift in Sources */,
 				B885BABF28244EEF006618A0 /* ContentView.swift in Sources */,
+				B885BAF72824508B006618A0 /* MainView.swift in Sources */,
 				B885BABD28244EEF006618A0 /* BalinaSoftApp.swift in Sources */,
+				B885BAF9282450AE006618A0 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B885BACE28244EF0006618A0 /* BalinaSoftTests.swift in Sources */,
+				B885BB0A28245222006618A0 /* MainViewTests.swift in Sources */,
+				B885BB08282451E7006618A0 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +711,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B885BAED28244FFE006618A0 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B885BAF028245009006618A0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B885BAF328245015006618A0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B885BAEE28244FFE006618A0 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B885BAED28244FFE006618A0 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B885BAF128245009006618A0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B885BAF028245009006618A0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		B885BAF428245015006618A0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B885BAF328245015006618A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B885BAB128244EEF006618A0 /* Project object */;
 }
